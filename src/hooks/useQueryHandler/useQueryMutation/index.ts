@@ -13,7 +13,7 @@ export const useLoginMutation = () => {
       axios({
         url: "api/auth/sign-in",
         method: "POST",
-        body: { ...data }, //
+        body: { ...data }, 
       }),
     onSuccess: (response) => {
       const token = response?.token;
@@ -29,7 +29,7 @@ export const useLoginMutation = () => {
     },
     onError: (error: { status: number }) => {
       const status = error.status || 400;
-      if (status === 400) notify("login_encorrect");
+      if (status === 400) notify("login_error");
     },
   });
 };

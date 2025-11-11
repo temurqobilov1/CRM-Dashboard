@@ -22,7 +22,7 @@ function Header({ children }: { children?: React.ReactNode }) {
           <div>
             <h2 className="text-xl font-bold mb-3 text-orange-600">Dashboard</h2>
             <div className="flex flex-col gap-1">
-              <NavLink className={linkClass} to={"/"}>
+              <NavLink className={linkClass} to={"/dashboard"}>
                 Home
               </NavLink>
               <NavLink className={linkClass} to={"/menegers"}>

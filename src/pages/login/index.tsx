@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useLoginMutation } from "../../hooks/useQueryHandler/useQueryAction";
+import { useLoginMutation } from "../../hooks/useQueryHandler/useQueryMutation";
 import {Loader} from "lucide-react";
 
 function Login() {

@@ -4,10 +4,10 @@ import Login from "../pages/login";
 import Admines from "../pages/admins";
 import Students from "../pages/students";
 import Course from "../pages/courses/course";
-
 import { PrivateRout } from "./private-rout";
 import Teachers from "../pages/teachers";
 import Menegers from "../pages/menegers";
+import Dashboard from "../pages/dashboard";
 
 export const router = createBrowserRouter([
   {
@@ -18,6 +18,10 @@ export const router = createBrowserRouter([
         path: "/",
         element: <MainLayout />,
         children: [
+          {
+            path: "/dashboard",
+            element: <Dashboard />,
+          },
           {
             path: "/menegers",
             element: <Menegers />,
