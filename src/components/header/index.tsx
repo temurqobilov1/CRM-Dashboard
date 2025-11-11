@@ -37,7 +37,6 @@ function Header({ children }: { children?: React.ReactNode }) {
               <NavLink className={linkClass} to={"/students"}>
                 Students
               </NavLink>
-              
               <NavLink className={linkClass} to={"/courses"}>
                 Courses
               </NavLink>

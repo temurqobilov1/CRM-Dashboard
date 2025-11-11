@@ -22,7 +22,7 @@ function Course() {
 
               <div className="flex justify-between items-center mb-4">
                 <p className="text-gray-400 font-medium">{item.duration}</p>
-                <p className="text-gray-400 font-medium">15 students</p>
+                <p className="text-gray-400 font-medium">course duration </p>
               </div>
 
               <p className="text-2xl font-bold text-orange-400">
