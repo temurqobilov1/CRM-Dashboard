@@ -12,7 +12,7 @@ function Header({ children }: { children?: React.ReactNode }) {
 
   const linkClass = ({ isActive }: { isActive: boolean }) =>
     `text-[17px] px-3 py-2 rounded-md hover:bg-orange-100 transition ${
-      isActive ? "border-l-4 border-orange-400 bg-orange-200" : ""
+      isActive ? " border-orange-400 bg-orange-200" : ""
     }`;
 
   return (
@@ -20,7 +20,7 @@ function Header({ children }: { children?: React.ReactNode }) {
       <aside className="w-[250px] bg-white shadow-md border-r border-gray-200 flex flex-col justify-between fixed top-0 left-0 h-screen p-6">
         <div className="flex flex-col gap-6 overflow-y-auto">
           <div>
-            <h2 className="text-xl font-bold mb-3 text-gray-800">Dashboard</h2>
+            <h2 className="text-xl font-bold mb-3 text-orange-600">Dashboard</h2>
             <div className="flex flex-col gap-1">
               <NavLink className={linkClass} to={"/"}>
                 Home
@@ -56,7 +56,7 @@ function Header({ children }: { children?: React.ReactNode }) {
         <nav className="h-[60px] bg-white shadow-sm border-b border-gray-200 flex items-center justify-between px-6 sticky top-0 z-10">
           <h2 className="text-lg font-semibold text-gray-800">Dashboard CRM</h2>
           <div className="text-gray-700 font-medium">
-            {user ? `${user.first_name} ${user.last_name}` : "Foydalanuvchi"}
+            {user ? `${user.first_name} ${user.last_name}` : "User"}
           </div>
         </nav>
 

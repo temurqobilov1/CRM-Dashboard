@@ -5,11 +5,12 @@ function Menegers() {
     pathname: "menegers",
     url: "api/staff/all-managers",
   });
-  console.log(data);
 
   return (
     <div className="p-6">
-      <h2 className="text-2xl font-bold mb-5">Maneger list</h2>
+      <div className="flex justify-between mb-5">
+        <h2 className="text-2xl font-bold">Maneger list</h2>  
+      </div>
       <table className="w-full border-collapse">
         <thead>
           <tr className="text-left border-b border-gray-300">
